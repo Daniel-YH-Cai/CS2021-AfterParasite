@@ -3,6 +3,7 @@ app = Flask(__name__)
 import codeitsuisse.routes.square
 import codeitsuisse.routes.parasite_1
 import codeitsuisse.routes.parasite_route
+#add new route!!!!!!!
 import codeitsuisse.routes.asteroid_route
 
 
