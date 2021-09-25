@@ -1,6 +1,7 @@
 from codeitsuisse.routes.parasite_1 import parasiteP1
 from codeitsuisse.routes.parasite_2 import parasiteP2
 from codeitsuisse.routes.parasite_3 import parasiteP3
+from codeitsuisse.routes.parasite_4 import parasiteP4
 
 
 def solveProblem1(room):
@@ -16,7 +17,7 @@ def solveProblem3(room):
     return int(parasiteP3(room['grid']))
 
 def solveProblem4(room):
-    return 4
+    return int(parasiteP4(room['grid']))
 
 def solve_All(room):
     ans_of_room={}
