@@ -12,13 +12,13 @@ def parasiteP1(grid, tar):
     visited[startX][startY][1] = 0
     while len(queue) != 0:
         curX, curY = queue.pop(0)
-        if curX - 1 > 0 and visited[curX-1][curY][0] == 0 and grid[curX-1][curY] == 1:
+        if curX - 1 >= 0 and visited[curX-1][curY][0] == 0 and grid[curX-1][curY] == 1:
             if curX - 1 == tarX and curY == tarY:
                 return visited[curX][curY][1]+1
             visited[curX-1][curY][0] = 1
             visited[curX-1][curY][1] = visited[curX][curY][1]+1
             queue.append((curX-1, curY))
-        if curY - 1 > 0 and visited[curX][curY-1][0] == 0 and grid[curX][curY-1] == 1:
+        if curY - 1 >= 0 and visited[curX][curY-1][0] == 0 and grid[curX][curY-1] == 1:
             if curX == tarX and curY - 1 == tarY:
                 return visited[curX][curY][1]+1
             visited[curX][curY-1][0] = 1
