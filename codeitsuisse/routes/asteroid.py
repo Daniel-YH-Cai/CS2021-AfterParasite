@@ -3,6 +3,9 @@ def asteroid(str):
     score = 0
     origin = 0
     for i in range(len(list)):
+        if list[i]['num'] == 2:
+            if score <= 1 : score = 1
+            continue
         l = i
         r = i
         tempScore = 0
